@@ -11,7 +11,6 @@
 """
 
 import argparse
-import sys
 from typing import Generator
 
 from schema import FizzBuzzInput
