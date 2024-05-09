@@ -37,7 +37,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     validated_input = FizzBuzzInput(lower_bound=args.lower_bound, upper_bound=args.upper_bound)
-    output = fizz_buzz_output_generator(validated_input)
-
-    for line in output:
-        print(line)
+    print(line for line in fizz_buzz_output_generator(validated_input))
